@@ -1,0 +1,71 @@
+
+:root {
+  --bg: #0b0f1a;
+  --card: #121826;
+  --text: #e6eaf2;
+  --muted: #b7c0d1;
+  --accent: #4f8cff;
+  --accent-2: #20c997;
+  --border: #1f2937;
+}
+
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; background: var(--bg); color: var(--text); font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; }
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+.container { width: 95%; max-width: 980px; margin: 0 auto; }
+
+.header { padding: 48px 0; border-bottom: 1px solid var(--border); background: linear-gradient(180deg, rgba(79,140,255,0.08), transparent); }
+.header__inner h1 { margin: 0 0 8px; font-size: 2.2rem; }
+.subtitle { margin: 0 0 12px; color: var(--muted); }
+.contact span { display: inline-block; margin-right: 12px; color: var(--muted); }
+.links { margin: 12px 0 0; }
+.cta { margin-top: 16px; }
+
+.btn {
+  display: inline-block;
+  padding: 10px 16px;
+  background: var(--accent);
+  color: white;
+  border-radius: 8px;
+  font-weight: 600;
+  border: 1px solid #2d6cdf;
+}
+.btn:hover { background: #3a7af8; }
+
+main { padding: 28px 0; }
+.card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 18px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.18);
+}
+.card h2 { margin-top: 0; font-size: 1.4rem; }
+
+.list { padding-left: 18px; }
+.list li { margin-bottom: 8px; }
+
+.grid-2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 8px; }
+
+.project { margin-bottom: 18px; }
+.project__header { display: flex; align-items: center; justify-content: space-between; }
+.project__header h3 { margin: 0; font-size: 1.15rem; }
+.tag {
+  background: rgba(32, 201, 151, 0.15);
+  color: var(--accent-2);
+  border: 1px solid rgba(32,201,151,0.35);
+  padding: 4px 8px;
+  border-radius: 6px;
+  font-size: 0.9rem;
+}
+.stack { color: var(--muted); margin: 6px 0 10px; }
+.bullets { padding-left: 18px; }
+.bullets li { margin-bottom: 6px; }
+
+.skills ul { padding-left: 18px; }
+.skills li { margin-bottom: 6px; }
+
+.footer { padding: 28px 0; border-top: 1px solid var(--border); color: var(--muted); text-align: center; }
